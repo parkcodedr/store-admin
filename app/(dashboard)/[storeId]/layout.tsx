@@ -1,8 +1,9 @@
+import React from "react";
 import Navbar from "@/components/navbar";
 import prismadb from "@/lib/prismadb";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-import React from "react";
+
 
 const DashboardLayout = async ({
   children,
