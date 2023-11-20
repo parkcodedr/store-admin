@@ -19,10 +19,7 @@ export async function POST(req:Request){
                 userId
             }
         })
-        console.log({store});
-        
         return NextResponse.json(store);
-        
     } catch (error) {
         console.log('[STORE_ERROR]',error);
         return new NextResponse('Interal Server Error',{status:500})
